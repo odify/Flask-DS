@@ -1,0 +1,13 @@
+black
+isort
+flask
+Flask-CORS
+
+gunicorn
+
+
+
+
+
+
+Flask-PyMongo

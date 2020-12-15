@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>datascience</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#3dd7ac', '#F25c27'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+            });
+        });
+    </script>
+</head>
+
+<body>
+    {% block content%}
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>
